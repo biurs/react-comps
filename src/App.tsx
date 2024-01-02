@@ -1,26 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import RegularList from './components/lists/RegularList'
+import { authors } from './data/authors'
+import SmallAuthorListItem from './components/authors/SmallAuthorListItems';
+import LargeAuthorListItem from './components/authors/LargeAuthorListItems';
+import Modal from './components/Modal';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Modal>
+        <div>TEST</div>
+      </Modal>
+    </>
+  )
 }
 
 export default App;

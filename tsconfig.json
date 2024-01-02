@@ -22,5 +22,5 @@
   },
   "include": [
     "src"
-  ]
+, "splitscreen/components/SplitScreen.tsx", "splitscreen/App.tsx"  ]
 }
