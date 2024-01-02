@@ -1,16 +1,14 @@
 import React from 'react';
-import RegularList from './components/lists/RegularList'
-import { authors } from './data/authors'
-import SmallAuthorListItem from './components/authors/SmallAuthorListItems';
-import LargeAuthorListItem from './components/authors/LargeAuthorListItems';
-import Modal from './components/Modal';
+import CurrentUserLoader from './components/current-user-loader';
+import { UserInfo } from './components/user-info';
 
 const App: React.FC = () => {
   return (
     <>
-      <Modal>
-        <div>TEST</div>
-      </Modal>
+      <CurrentUserLoader>
+        {/*// @ts-ignore */}
+        <UserInfo/>
+      </CurrentUserLoader>
     </>
   )
 }
